@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-title>Roles</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <ion-list-header color="dark">Key</ion-list-header>
+    <ion-item><ion-icon name="star"></ion-icon> Mystic</ion-item>
+    <ion-item><span>💀</span> Corrupt</ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-list-header color="dark"><ion-icon name="moon"></ion-icon> One Moon</ion-list-header>
+    <ion-item> <i>Role Name</i> <span item-right><i>Faction</i></span></ion-item>
+    <ion-item *ngFor="let role of one" (click)="goToDescription(role)">
+      <ion-icon *ngIf="role.mystic" name="star"></ion-icon>
+      <span *ngIf="role.corrupt">💀</span>
+      {{role.name}}
+      <span item-right>{{role.faction}}</span>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+  <ion-list-header color="dark"><ion-icon name="moon"></ion-icon><ion-icon name="moon"></ion-icon> Two Moons</ion-list-header>
+    <ion-item> <i>Role Name</i> <span item-right><i>Faction</i></span></ion-item>
+    <ion-item *ngFor="let role of two" (click)="goToDescription(role)">
+      <ion-icon *ngIf="role.mystic" name="star"></ion-icon>
+      <span *ngIf="role.corrupt">💀</span>
+      {{role.name}}
+      <span item-right>{{role.faction}}</span>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+  <ion-list-header color="dark"><ion-icon name="moon"></ion-icon><ion-icon name="moon"></ion-icon><ion-icon name="moon"></ion-icon> Three Moons</ion-list-header>
+    <ion-item> <i>Role Name</i> <span item-right><i>Faction</i></span></ion-item>
+    <ion-item *ngFor="let role of three" (click)="goToDescription(role)">
+      <ion-icon *ngIf="role.mystic" name="star"></ion-icon>
+      <span *ngIf="role.corrupt">💀</span>
+      {{role.name}}
+      <span item-right>{{role.faction}}</span>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+  <ion-list-header color="dark"><ion-icon name="moon"></ion-icon><ion-icon name="moon"></ion-icon><ion-icon name="moon"></ion-icon> Spirits</ion-list-header>
+    <ion-item> <i>Role Name</i> <span item-right><i>Faction</i></span></ion-item>
+    <ion-item *ngFor="let role of spirits" (click)="goToDescription(role)">
+      <ion-icon *ngIf="role.mystic" name="star"></ion-icon>
+      <span *ngIf="role.corrupt">💀</span>
+      {{role.name}}
+      <span item-right>{{role.faction}}</span>
+    </ion-item>
+  </ion-list>
+</ion-content>

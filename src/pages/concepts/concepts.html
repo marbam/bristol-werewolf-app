@@ -1,0 +1,145 @@
+<!--
+  Generated template for the ConceptsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>Key Concepts</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+
+<ion-slides pager>
+
+  <ion-slide style="background-color: red">
+	<ion-card>
+	  <ion-card-header>Mystic</ion-card-header>
+	  <ion-card-content>
+	    The Mystics the most powerful villagers, denoted by a star (<ion-icon name="star"></ion-icon>). There are five mystics, all with different powers, and they're the prime targets for the wolves.
+	  </ion-card-content>
+	</ion-card>
+	<ion-card>
+	  <ion-card-header>Corrupt</ion-card-header>
+	  <ion-card-content>
+	  	Most bad roles (and some village roles) will show up as Corrupt when checked by certain Mystics. Corruption is the main way the village identifies evil roles, but it's important to keep in mind that not everyone corrupt is a bad character.
+	  </ion-card-content>
+	</ion-card>
+	<ion-card>
+	  <ion-card-header>Swipe for more >></ion-card-header>
+	</ion-card>
+  </ion-slide>
+
+  <ion-slide style="background-color: orange">
+	<ion-card>
+	  <ion-card-header>Night</ion-card-header>
+	  <ion-card-content>
+	  	Everyone sleeps, and the moderator selectively wakes up roles to take special actions (including Mystics/Wolves). Certain characters are only woken up on the first night, so that they can be given information that will last throughout the game.
+	  </ion-card-content>
+	</ion-card>
+
+	<ion-card>
+	  <ion-card-header>Day</ion-card-header>
+	  <ion-card-content>
+	  	When waking up, the village receives it's daily News (more info below!). From there, the village decides who to burn at the stake (kill!) through two rounds of voting, both of which are explained below: Accusations and Ballot.
+	  </ion-card-content>
+	</ion-card>
+  </ion-slide>
+
+  <ion-slide style="background-color: yellow">
+	<ion-card>
+	  <ion-card-header>News</ion-card-header>
+	  <ion-card-content>
+	  	The moderator announces two bits of news every morning - Information relating to the Clairvoyant's check from the night before, and any deaths that occurred during the night. Information relating to the Clairvoyant's check can come in three forms, depending on which roles are in play, and if they are alive/dead/minionised:
+	  </ion-card-content>
+	</ion-card>
+
+	<ion-card>
+	  <ion-card-header>News: "A non-corrupt player was found"</ion-card-header>
+	  <ion-card-content>
+		The clairvoyant was alive at the start of the night and the player they checked was non-corrupt. To get this news, a BARD must be in the game and alive and has not been turned into a vampire minion.	
+	  </ion-card-content>
+	</ion-card>
+
+  </ion-slide>
+  <ion-slide style="background-color: green">
+	<ion-card>
+	  <ion-card-header>News: "A Corrupt player was found"</ion-card-header>
+	  <ion-card-content>
+		The clairvoyant was alive at the end of the night and the player they checked was corrupt. To get this news, an INNKEEPER must be in the game, alive and has not been turned into a vampire minion.
+	  </ion-card-content>
+	</ion-card>
+
+	<ion-card>
+	  <ion-card-header>News: "There is no news from the Inn"</ion-card-header>
+	  <ion-card-content>
+		Either the Clairvoyant has died, the relevant news role (Bard/Innkeeper) is either not in the game, has died, or has been turned into a vampire minion.
+	  </ion-card-content>
+	</ion-card>
+  </ion-slide>
+
+  <ion-slide style="background-color: blue">
+	<ion-card>
+	  <ion-card-header>
+	    Accusations
+	  </ion-card-header>
+	  <ion-card-content>
+		Voting Round #1! Everyone closes their eyes. The moderator reads out everyone's name in turn. Each player (without opening their eyes) votes once, and once only for the player they would like to burn at the stake. The players with the highest two ranks of votes are then on the Ballot and, after a chance to defend themselves, are in danger of being burned and eliminated in the Ballot
+	  </ion-card-content>
+	</ion-card>
+
+  </ion-slide>
+  <ion-slide style="background-color: purple">
+
+	<ion-card>
+	  <ion-card-header>
+	    Ballot
+	  </ion-card-header>
+	  <ion-card-content>
+	  	Voting Round #2! Similar to the Accusations round, this is another round of voting, except if you're on the Ballot (i.e. have the highest number of votes in the Accusations), you cannot vote. The moderator will read through all names on the ballot, in order, and anyone who is allowed to vote again votes for who they would like eliminated. The player with the highest number of votes here is eliminated. If there is a tie ("The village is undecided"), nobody burns. After the result is announced and if the game is not over, everyone keeps their eyes closed and the game goes straight into the next night.
+	  </ion-card-content>
+	</ion-card>
+  </ion-slide>
+
+  <ion-slide style="background-color: grey">
+	<ion-card>
+	  <ion-card-header>
+	    Death
+	  </ion-card-header>
+	  <ion-card-content>
+		If you are killed, you are out of the game. You still win if your faction wins (For example, If you're a wolf, and the wolves win, you win!). You can keep your eyes open for the whole game, and view the list of players, but you can't talk or signal to help your team. It can be annoying to die relatively early but on the plus side you get to watch the village tear itself apart.
+	  </ion-card-content>
+	</ion-card>
+
+	<ion-card>
+	  <ion-card-header>
+	    Minions
+	  </ion-card-header>
+	  <ion-card-content>
+	  	Won't be relevant for your first game, but if, on their turn, a Vampire selects a player who isn't a Mystic or a Wolf (or a "shadow" character), that player becomes a vampire minion. They lose any special powers they had, and are working with the vampire. Minions only know who the Vampire and Igor are - they don't know other minions, and win if the Vampire wins.
+	  </ion-card-content>
+	</ion-card>
+  </ion-slide>
+
+  <ion-slide style="background-color: grey">
+	<ion-card>
+	  <ion-card-content>
+	  	That's all for now - Click the button below to head back to the menu!
+	  </ion-card-content>
+	</ion-card>
+	<button ion-button large block (click)="goToMenu()">Menu</button>
+  </ion-slide>
+</ion-slides>
+<!-- 
+
+
+
+
+ -->
+</ion-content>
